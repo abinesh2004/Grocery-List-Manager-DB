@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Grocery List</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Grocery List</h1>
+    <div id="groceryList">
+      <div id="itemsContainer">
+        <!-- Grocery list items will be dynamically added here -->
+      </div>
+      <div id="addItemContainer" style="display: none;">
+        <div class="form-group">
+          <label for="itemName">Item Name:</label>
+          <input type="text" id="itemName" class="form-control" placeholder="Enter Item Name">
+        </div>
+        <div class="form-group">
+          <label for="itemQuantity">Quantity:</label>
+          <input type="number" id="itemQuantity" class="form-control" placeholder="Enter Quantity">
+        </div>
+        <div class="form-group">
+          <label for="itemPrice">Price:</label>
+          <input type="number" id="itemPrice" class="form-control" placeholder="Enter Price">
+        </div>
+        <button id="addItemBtn" class="modern-button">Add Item</button>
+      </div>
+      <button id="showAddItemBtn" class="modern-button">Add Item</button>
+      <button id="calculateTotalBtn" class="modern-button">Calculate Total</button>
+      <button id="saveListBtn" class="modern-button">Save List</button>
+      <div id="totalContainer">
+        <p>Total Cost: Rs.<span id="totalCost">0.00</span></p>
+      </div>
+      <div id="savedListContainer">
+        <h2>Saved Grocery List</h2>
+        <div class="sort-buttons">
+          <button id="sortByIdBtn" class="sort-button">Sort by ID</button>
+          <button id="sortByItemNameBtn" class="sort-button">Sort by Item Name</button>
+          <button id="sortByQuantityBtn" class="sort-button">Sort by Quantity</button>
+          <button id="sortByPriceBtn" class="sort-button">Sort by Price</button>
+        </div>
+        <table id="savedListTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Item Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Saved grocery list items will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

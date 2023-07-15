@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+#groceryList {
+  margin-top: 20px;
+}
+
+/* Item Styles */
+.item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.item p {
+  margin: 0;
+}
+
+/* Button Styles */
+.modern-button {
+  margin-top: 10px;
+  background-color: #1e90ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.modern-button:hover {
+  background-color: #0f75c3;
+}
+
+.sort-button {
+  margin-right: 10px;
+  background-color: #f9f9f9;
+  color: #333333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sort-button:hover {
+  background-color: #e1e1e1;
+}
+
+.action-button {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.action-button:hover {
+  background-color: #c82333;
+}
+
+/* Table Styles */
+#savedListContainer {
+  margin-top: 20px;
+}
+
+#savedListTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#savedListTable th,
+#savedListTable td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Form Styles */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  flex: 0 0 100px;
+}
+
+.form-group input {
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* Total Cost Styles */
+#totalContainer {
+  text-align: right;
+}
